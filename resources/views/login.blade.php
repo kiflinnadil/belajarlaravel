@@ -4,5 +4,5 @@
 
 @section('content')
     <h1>Login</h1>
-    <p>Welcome to the Login</p>
+    <p>Welcome to Login</p>
 @endsection
