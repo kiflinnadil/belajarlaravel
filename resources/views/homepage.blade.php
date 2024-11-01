@@ -23,7 +23,7 @@
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $contact['name'] }}</td>
                         <td>{{ $contact['email'] }}</td>
-                        <td>{{ $contact['phobe'] }}</td>
+                        <td>{{ $contact['phone'] }}</td>
                     </tr>
                 @endforeach
             </body>

@@ -16,4 +16,15 @@ class UserController extends Controller
     public function create(){
         return view("create");
     }
+
+    public function store(Request $request) 
+    {
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+        ]);
+
+        return redirect()->route("homepage");
+    }
 }

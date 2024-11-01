@@ -13,7 +13,7 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/home',[UserController::class, "index"]);
+Route::get('/home',[UserController::class, "index"])->name("homepage");
     // $contacts = [];
     // $faker = Faker::create();
     // for ($i = 1; $i <= 10; $i++){
@@ -24,4 +24,5 @@ Route::get('/home',[UserController::class, "index"]);
     //     ];
     // };
 
-    Route::get("/create-user", [UserController::class, "create"])->name("create-user");
+Route::get("/create-user", [UserController::class, "create"])->name("create-user");
+Route::post("/create-user", [UserController::class, "store"])->name("store-user");
