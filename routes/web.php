@@ -23,3 +23,5 @@ Route::get('/home',[UserController::class, "index"]);
     //         'phone' => $faker->phoneNumber
     //     ];
     // };
+
+    Route::get("/create-user", [UserController::class, "create"])->name("create-user");

@@ -4,9 +4,12 @@
 
 @section('content')
     <h1>Homepage</h1>
-    <p>Welcome to the Contact App</p>
-
     <div>
+        <p>Welcome to the Contact App</p>
+        <a class="px-3 py-2 rounded-lg bg-green-500 hover:bg-green-700" 
+        href="{{route('create-user')}}">Create User</a>
+    <div>
+    </div>
         <table class="border">
             <thead>
                 <th>No.</th>

@@ -12,4 +12,8 @@ class UserController extends Controller
         $users = User::all();
         return view('homepage', ['contact' => $users]);
     }
+
+    public function create(){
+        return view("create");
+    }
 }
